@@ -8,13 +8,13 @@ To get started with this repository, follow the steps below:
 
 1. **Clone the Repository**: 
    ```bash
-   git clone https://github.com/your-username/Roxiler-Assignment.git
+   git clone https://github.com/YashDxr/Roxiler-Assignment.git
 
 
 2. **Navigate to the Project Directory**:
 
   ```
-  cd Roxiler-Assignment
+  cd .\Roxiler-Assignment\
 
   ```
 
