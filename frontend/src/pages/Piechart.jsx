@@ -18,7 +18,7 @@ export default function PieChart() {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:3000/charts/pieChart?month=${selectedMonth}`
+        `${import.meta.env.VITE_BACKEND_URL}/charts/pieChart?month=${selectedMonth}`
       );
       setPieChartData(response.data);
     } catch (error) {

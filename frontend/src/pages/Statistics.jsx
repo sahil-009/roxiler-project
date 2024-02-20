@@ -14,7 +14,7 @@ export default function Statistics() {
   const fetchStatistics = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:3000/data/statistics?month=${selectedMonth}`
+        `${import.meta.env.VITE_BACKEND_URL}/data/statistics?month=${selectedMonth}`
       );
       setStatistics(response.data);
     } catch (error) {

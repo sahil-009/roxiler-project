@@ -16,7 +16,7 @@ export default function TransactionTable() {
   const fetchTransactions = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:3000/data/transactions?page=${page}&perPage=${perPage}&search=${search}`
+        `${import.meta.env.VITE_BACKEND_URL}/data/transactions?page=${page}&perPage=${perPage}&search=${search}`
       );
       if (Array.isArray(response.data)) {
         setTransactions(response.data);

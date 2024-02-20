@@ -14,7 +14,7 @@ export default function CombinedData() {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:3000/combinedData?month=${selectedMonth}`
+        `${import.meta.env.VITE_BACKEND_URL}/combinedData?month=${selectedMonth}`
       );
       setCombinedData(response.data);
     } catch (error) {
