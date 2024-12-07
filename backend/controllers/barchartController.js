@@ -4,7 +4,7 @@ export const barChart = async (req, res) => {
   const { month } = req.query;
   const parsedMonth = parseInt(month);
 
-  const currentYear = new Date().getFullYear() - 2; //converting dates to the year 2022 due to database consisting of dates of year 2022
+  const currentYear = new Date().getFullYear() - 2;
   const startDate = new Date(currentYear, parsedMonth - 1, 1);
   const endDate = new Date(currentYear, parsedMonth, 0);
 
